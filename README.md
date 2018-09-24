@@ -1,21 +1,26 @@
-# vue-file-upload
+# Upload Text File with Vue JS
+
+>A simple Vue JS component to upload a text file.
+
+
+## Dependencies
+
+- Vue JS
+
+
 
 ## Project setup
+
 ```
+// Install dependencies
 npm install
+
+// Compile and hot-reload for development
+ npm run serve
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Sources
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- [Alligator.io: File Reader Component by Alex Jover Morales](https://alligator.io/vuejs/file-reader-component/)
+- [MDN: fileReader()](https://developer.mozilla.org/en-US/docs/Web/API/FileReader)
 
-### Lints and fixes files
-```
-npm run lint
-```

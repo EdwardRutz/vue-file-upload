@@ -1,28 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Upload Text</h1>
+    <textarea rows="10" v-model="text"></textarea>
+    <br>
+    <app-upload-text @load="text = $event"></app-upload-text>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import UploadText from "./components/UploadText";
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+  export default {
+    name: "app",
+    data: () => ({ text: "" }),
+    components: {
+      "app-upload-text": UploadText
+    }
+  };
 </script>
+<style scoped>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    text-align: center;
+    margin: auto auto;
+  }
+
+
 </style>
